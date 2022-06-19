@@ -112,7 +112,7 @@ function multiply(){
 }
 
 function divide(){
-    if(previousNumber === 0 || previousNumber === ''){
+    if(previousNumber === '0' || previousNumber === ''){
         displayValue.textContent = 'ERROR';
         return;
     }
@@ -182,7 +182,7 @@ function multiplyChain(){
 }
 
 function divideChain(){
-    if(previousNumber === 0){
+    if(previousNumber === '0'){
         displayValue.textContent = 'ERROR';
         return;
     }
