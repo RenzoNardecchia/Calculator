@@ -1,34 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 1100px;
+    background-image: linear-gradient(to bottom right, #4C5258 , #191c20);
 }
 
 #calculatorContainer{
     width: 450px;
     height: 600px;
-    background-color: black;
+    background-color: #282B2F;
     margin: auto;
     margin-top: 30px;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px #16181A;
 }
 
 #screen{
-    width: 420px;
+    width: 400px;
     height: 100px;
-    background-color: white;
+    background-color: #E0E3E9;
     margin-bottom: 15px;
     display: flex;
     flex-direction: row;
     justify-content: end;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-#screenContent{
-    font-size: 80px;
+#displayValue{
+    font-size: 67px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -47,8 +58,28 @@ button{
     height: 80px;
     margin: 5px;
     font-size: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1D2024;
+    color: #E0E3E9;
+    filter: drop-shadow(3px 5px 5px rgba(26, 28, 31, 0.6));
 }
 
 #clear{
     width: 290px;
+    color: #E0E3E9;
+    background-color: #ff3333;
+}
+ #zero{
+    width: 190px;
+ }
+
+#buttonContainer button:active{
+    box-shadow: inset 5px 5px 10px rgba(26, 28, 31, 0.8),
+    inset -3px -4px 5px rgba(185, 187, 190, 0.1);
+}
+
+#buttonContainer #clear:active{
+    box-shadow: inset 5px 5px 15px rgba(155, 36, 36, 0.8),
+    inset -3px -4px 5px rgba(190, 188, 185, 0.1);
 }
